@@ -44,6 +44,25 @@
             position: absolute;
             text-align: center;
         }
+        .tooltip {
+            visibility: hidden;
+            width: 120px;
+            background-color: rgb(179, 179, 179);
+            text-align: center;
+            border-radius: 0px;
+            padding: 2px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Position the tooltip above the image */
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            }
+            .image-container:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+            }
         .image-container img {
             display: block;
             margin: 0 auto;
@@ -62,6 +81,8 @@
             font-size: 14px;
             cursor: pointer;
         }
+        
+        
     </style>
 </head>
 <body>
@@ -74,54 +95,60 @@
         <span class="header-text header-text-2021">2021</span>
     </header>
     <div style="width: 3009px; height: 700px; position: relative; background: white; overflow: hidden;">
+        
         <div class="image-container" style="left: 44px; top: 400px;">
             <a href="circulo-me.html">
-                <img style="width: 200.27px; height: 150px;" src="Circulo-me/entranhar-me-05.jpg" title="Circulo-me"/>
-            
+            <img style="width: 200.27px; height: 150px;" src="Circulo-me/entranhar-me-05.jpg"/>
+            <span class="tooltip">Circulo-me</span>
             </a>
         </div>
         <div class="image-container" style="left: 259px; top: 100px;">
-            <img style="width: 200px; height: 150px;" src="S.Miguel 12.24/SAM_3396-2.jpg" />
-            <span>S.Miguel 12.24/SAM_3396</span>
+            <a href="meadow 12.24.html">
+            <img style="width: 200px; height: 150px;" src="S.Miguel 12.24/meadow -3.jpg" />
+            <span class="tooltip">meadow</span>
+         </a>
+            </div>
+       
         </div>
         <div class="image-container" style="left: 459px; top: 470px;">
             <img style="width: 158px; height: 200px;" src="composite of trace exercices.jpg" />
-            <span>composite of trace exercices</span>
+            <span class="tooltip">composite of line exercises</span>
         </div>
         <div class="image-container" style="left: 697px; top: 330px;">
             <img style="width: 200px; height: 200px;" src="Tenerife nov 24/making part of. tenerife-18.jpg" />
-            <span>Tenerife nov 24</span>
+            <span class="tooltip">nov tenerife</span>
         </div>
         <div class="image-container" style="left: 1021px; top: 180px;">
             <img style="width: 200px; height: 150px;" src="Tenerife aug 2024/making part of. tenerife . august-1.jpg" />
-            <span>Tenerife aug 2024</span>
+            <span class="tooltip">aug tenerife</span>
         </div>
         <div class="image-container" style="left: 1345px; top: 220px;">
             <img style="width: 200px; height: 163px;" src="vulcão erupção/um vulcão dorme.jpg" />
-            <span>um vulcão dorme.</span>
+            <span class="tooltip">um vulcão dorme</span>
         </div>
         <div class="image-container" style="left: 1688px; top: 300px;">
             <img style="width: 200.18px; height: 143px;" src="Groningen 04.24 SIGN/SIGN -20.jpg" />
-            <span>Groningen 04.24 SIGN</span>
+            <span class="tooltip">april groningen</span>
         </div>
         <div class="image-container" style="left: 1943px; top: 100px;">
             <img style="width: 200px; height: 200px;" src="in some situationship with God/I'd Like to tell you 1.jpg"/>
-            <span>in some situationship with God</span>
+            <span class="tooltip">in some situationship with god</span>
         </div>
         <div class="image-container" style="left: 2104px; top: 450px;">
             <img style="width: 150px; height: 200px;" src="drying body rack/IMG_5657.jpg" />
-            <span>drying body rack</span>
+            <span class="tooltip">drying body rack</span>
         </div>
         <div class="image-container" style="left: 2276px; top: 240px;">
             <img style="width: 200px; height: 133px;" src="square habited/16.jpg" />
-            <span>square habited</span>
+            <span class="tooltip">quare_habited</span>
         </div>
         <div class="image-container" style="left: 2567px; top: 370px;">
             <img style="width: 199.48px; height: 133px;" src="S.Miguel 01.23/making part of-1.jpg" />
-            <span>S.Miguel 01.23</span>
+            <span class="tooltip">jan s.miguel</span>
         </div>
         <div class="image-container" style="left: 2796px; top: 450px;">
             <img style="width: 199.48px; height: 133px;" src="Graciosa aug 2021\making part of. graciosa.-3.jpg" />
+            <span class="tooltip">aug 2021 graciosa</span>
                     </div>
                 </div>
             
